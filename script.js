@@ -61,4 +61,3 @@ document.querySelectorAll('input[name="recommendationType"]').forEach(radio => {
         }
     });
 });
-
