@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+<h1>Book Recommendation System</h1>
+
+<div class="container">
+    <form id="recommendationForm">
+        <label>
+            <input type="radio" name="recommendationType" value="random" checked>
+            Random Book Recommendation
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="recommendationType" value="genre">
+            Recommend by Genre
+        </label>
+        <br>
+        <div id="genreSelection" style="display: none;">
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <option value="fiction">Fiction</option>
+                <option value="non-fiction">Non-Fiction</option>
+                <option value="mystery">Mystery</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+        </div>
+        <br>
+        <div class="button-and-book">
+            <button type="button" onclick="getRecommendation()">Get Recommendation</button>
+            <div class="book-info">
+                <img id="bookImage" src="" alt="Book Cover" style="display: none;">
+                <p id="bookName" style="display: none;"></p>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
