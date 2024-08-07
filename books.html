@@ -11,14 +11,20 @@
 
 <body>
 
-  <div class="pink-bar"></div>
-  <div class="content"></div>
+  <ul>
+    <li id="logo"><a href="#home"><img src="T.jpg" ></a></li>
+   <li><a href="index.html">Home</a></li>
+   <li><a href="books.html">Books</a></li>
+   <li><a href="nggt.html">N.G.G.T.</a></li> 
+ </ul>
+ 
 
 
 <h1 class=BookHeader id="MyTop"> My Top Ten </h1>
 
   </br><h1 class=BookHeader id="GetRec"> Get Recommendation </h1>
 
+ 
   <form id="recommendationForm">
     <label>
         <input type="radio" name="recommendationType" value="random" checked>
@@ -38,15 +44,17 @@
             <option value="mystery">Mystery</option>
             <option value="fantasy">Fantasy</option>
         </select>
-    </div>
+    </div>    
     <br>
-    <button type="button" onclick="getRecommendation()">Get Recommendation</button>
-  </form>
-
-  <p id="recommendation"></p>
-  
-
-
+    <div class="button-and-book">
+        <button type="button" onclick="getRecommendation()">Get Recommendation</button> 
+        <div class="book-info">
+            <img id="bookImage" src="" alt="Book Cover" style="display: none;">
+            <p id="bookName" style="display: none;"></p>
+        </div>
+    </div>
+</form>
+</div>
 
 
 
