@@ -5,6 +5,8 @@ html {
 
 body {
   background-color: #89BA8B !important;
+ 
+ 
 }
 
 ul {
@@ -14,7 +16,7 @@ ul {
   overflow: hidden;
   background-color: #F7C6DE;
   text-align: right; 
-  
+
 }
 
 li {
@@ -58,6 +60,7 @@ letter-spacing: 0.5px;
 line-height: 1.5;
 text-align: center;
 margin-top: 100px;
+  margin-bottom: 20px;
     text-decoration: underline;
     text-decoration-color: #F7C6DE; 
 
@@ -75,7 +78,6 @@ margin-top: 100px;
   line-height: 1.5;
   text-align: center;
   margin-top: 80px;
-
   overflow: hidden;
 }
 
@@ -104,13 +106,13 @@ margin-top: 100px;
     object-fit: cover; 
    float: right;
   margin-left: 10px;
-  border: 4px solid #F7C6DE;
+  border: 4px solid #0A5313;
   transition: all 0.3s ease
-  
+
 }
 
   #MyImage:hover {
-    border-color: #f7c6de;; 
+    border-color: #0A5313;; 
     transform: scale(1.05); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   }
@@ -131,21 +133,23 @@ margin-top: 100px;
 
 .BookHeader {
   font-family: 'Arial', sans-serif;
-  font-size: 18px;
+  background-color: #0A5313
+  font-size: 30px;
   font-weight: bold;
   text-align: center;
-  color: #0A5313;
+  color: #F7C6DE;
   text-decoration: underline;
+  text-decoration-color: #F7C6DE;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  margin-top: 20px;
-  margin-bottom: 70px;
+  margin-top: 30px;
+  margin-bottom: 60px;
 }
 
 .BookHeader:hover {
-  color: #F7C6DE;
-  background-color: #0A5313;
+  color: #0A5313;
+  background-color: #F7C6DE;
   padding: 10px;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -157,6 +161,7 @@ margin-top: 100px;
   font-family: 'Arial', sans-serif;
   font-size: 15px
   text-align: left;
+  color: #0A5313;
 }
 
 button {
@@ -175,33 +180,120 @@ button:hover {
   color: #0A5313;
 }
 
-.form-container {
+#recommendationForm {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-  margin-left: 50px; /* Adds space from the left edge of the page */
-}
-
+  margin-top: 5px;
+  color:#0A5313;
+  font-weight: bold;
+  }
 
 .book-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-left: 50%; 
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
 }
 
-/* Book image styling */
 .book-info img {
-  max-width: 100px; 
+  max-width: 150px; 
   height: auto; 
-  margin-right: 15px; 
 }
-
 
 .book-info p {
+  color: #0A5313;
   font-size: 18px;
-  padding-bottom: 5px;
+  font-weight: bold;
+  padding-bottom: 9px;
   border-bottom: 2px solid #F7C6DE; 
   display: inline-block;
- 
+}
+
+
+p {
+  color: #0A5313;
+  font-family: 'Arial', sans-serif;
+}
+
+.btn-primary {
+  background-color: #0A5313;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #F7C6DE;
+  color: #0A5313;}
+
+#Embed {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  iframe {
+    width: 675px;
+    height: 675px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+    
+  }
+
+#ngtitle{
+color: #0A5313;
+text-align: center;
+padding-bottom: 30px; 
+  margin: 20px 0;
+
+ }
+
+#ngtitle:hover{
+  color: #F7C6DE;
+  background-color: #0A5313; 
+  padding: 10px; 
+  border-radius: 5px; 
+}
+
+.screenshot {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.visit-btn {
+  background-color: #0A5313;
+  color: #f7c6de;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.visit-btn:hover 
+{background-color: #F7C6DE;
+  color: #0A5313; 
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
